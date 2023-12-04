@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="fuzhou_etl_test" verbose="1" parallel="classes" thread-count="5">
+    <listeners>
+        <listener class-name="org.cechc.etl.test.Report" />
+    </listeners>
+
+    <test name="PatientFieldTest" >
+        <classes>
+            <class name="org.cechc.etl.test.fields.patient.PatientFieldTest" />
+            <class name="org.cechc.etl.test.count.PatientCountTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="PatientFieldTest2" >-->
+<!--        <classes>-->
+<!--            <class name="org.cechc.etl.test.fields.patient.PatientFieldTest" >-->
+<!--                <methods>-->
+<!--                    <include name="compare_patient_base_info" />-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

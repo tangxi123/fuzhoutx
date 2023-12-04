@@ -1,0 +1,20 @@
+#spring:
+#  datasource:
+#    #数据库用户名和密码
+#    username: root
+#    password: tx123456
+#    url: jdbc:mysql://localhost:3306/etl_test_tool
+#    #加载驱动
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#mybatis:
+#  configuration:
+#   log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    org.cechc.etl.test: trace
+  file: fuzhouEtlTest.log
+
+server:
+  port: 8081
+
+
